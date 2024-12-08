@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Votar</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+  <div class="container mt-5">
+    <div id="poll-container" class="text-center">
+      <!-- Contenido dinámico de la encuesta -->
+    </div>
+    <!-- Contenedor para los resultados dinámicos -->
+    <h3 class="text-center mt-4">Resultados:</h3>
+    <ul id="results-container" class="list-unstyled text-center">
+      <!-- Aquí se cargarán los resultados dinámicamente -->
+    </ul>
+    <canvas id="resultsChart" width="400" height="200"></canvas>
+    <button id="export-btn" class="btn btn-secondary mt-3">Exportar Resultados (CSV)</button>
+    <button id="export-pdf-btn" class="btn btn-secondary mt-3">Exportar Resultados (PDF)</button>
+  </div>
+  <script src="assets/js/poll.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.4.0/jspdf.umd.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf-autotable/3.5.25/jspdf.plugin.autotable.min.js"></script>
+</body>
+</html>
